@@ -1,0 +1,74 @@
+{
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "tsserver": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
+      "initializationOptions": {
+        "hostInfo": "neovim"
+      }
+    }
+  },
+
+  "snippets.ultisnips.directories": ["UltiSnips", "vim-snippets/snippets"],
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+  "suggest.noselect": false,
+  "suggest.enablePreselect": true,
+
+  // "java.jdt.ls.java.home": "~/.sdkman/candidates/java/current",
+  // "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
+  // "java.format.enabled": true,
+  // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  // "java.format.settings.profile": "GoogleStyle",
+  // "java.configuration.updateBuildConfiguration": "automatic",
+  // "java.referencesCodeLens.enabled": true,
+  // "java.implementationsCodeLens.enabled": true,
+  // "java.errors.incompleteClasspath.severity": "ignore",
+  // "java.maven.downloadSources": true,
+  // "java.import.gradle.enabled": true,
+  // "java.import.maven.enabled": true,
+  // "java.completion.favoriteStaticMembers": [
+  //   "org.springframework.util.Assert.*",
+  //   "org.springframework.util.StringUtils.*",
+  //   "org.springframework.beans.factory.BeanFactory.*",
+  //   "org.springframework.beans.factory.BeanFactoryUtils.*",
+  //   "org.springframework.core.env.Environment.*",
+  //   "org.springframework.core.env.EnvironmentCapable.*",
+  //   "org.springframework.core.env.Profiles.*",
+  //   "org.springframework.context.ApplicationContext.*",
+  //   "org.springframework.context.ApplicationContextAware.*",
+  //   "org.springframework.context.ConfigurableApplicationContext.*"
+  // ],
+  // "java.completion.importOrder": [
+  //   "java",
+  //   "javax",
+  //   "org",
+  //   "com"
+  // ],
+  // "java.progressReports.enabled": true,
+  // "java.autobuild.enabled": true,
+  // "java.configuration.runtimes": [
+  //   {
+  //     "name": "JavaSE-17",
+  //     "path": "~/.sdkman/candidates/java/current"
+  //   }
+  // ],
+ 
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit",
+    "h": "open:split"
+  },
+  "explorer.git.enable": true,
+  "snippets.ultisnips.pythonPrompt": false
+}
